@@ -104,6 +104,10 @@ main .shop_nav{
     font-size: 0.75rem;
     margin:1.5rem 0 1.5rem 3.75rem;
 }
+main .item_nav{
+    font-size: 0.75rem;
+    margin:1.5rem 0 1.5rem 9rem;
+}
 main .side_nav{
     position: fixed;
     width: 14rem;
@@ -130,7 +134,56 @@ main .shop_pic{
 main .shop_item p{
     margin:0;
 }
-
+main .item_page_content{
+    display: flex;
+}
+main .item_gallery{
+    margin:0 3.75rem 3.75rem 9rem;
+    display: inline-grid;
+    width: 25.5rem;
+    height: 38.5rem;
+    grid-template: 
+    "a a a" 29.75rem
+    "b c d" 8rem/ 8rem 8rem 8rem; 
+    gap: 0.75rem; 
+}
+main .item_gallery img{
+    object-fit: cover;
+}
+main .img_gal_main{
+    grid-area: a;
+    width:100%;
+    height: 29.75rem;
+}
+main .img_gal{
+    width: 8rem;
+    height: 8rem;
+}
+main .item_description{
+    display: inline-block;
+    width: 23.5rem;
+    height: 19.5rem;
+}
+main .item_description h2{
+    font-size: 1.5rem;
+    margin: 0 0 0.5rem;
+}
+main .cart_button{
+    text-transform: uppercase;
+}
+main .item_description .cart_button{
+    margin: 1.5rem 0;
+    width:100%;
+    height: 2.5rem;
+}
+main .item_text{
+    margin-top: 1rem;
+}
+main .item_text span, main .item_text p{
+    font-size: 0.9rem;
+    margin-bottom: 0;
+    text-align: justify;
+} 
 /*footer*/
 footer{
     height: 7.5rem;
